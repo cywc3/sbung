@@ -29,7 +29,7 @@
         status.innerText = 'URL을 추출하는 중입니다..';
         const body = e.target.result;
 
-        const hostNameRegex = /https:\/\/webstatic(-sea)?\.hoyoverse\.com/;
+        const hostNameRegex = /https:\/\/gs\.hoyoverse\.com/;
         const endTrailRegex = /plat_type=android\n/;
 
         const log = body.search(hostNameRegex);
