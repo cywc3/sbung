@@ -29,8 +29,8 @@
         status.innerText = 'URL을 추출하는 중입니다..';
         const body = e.target.result;
 
-        const hostNameRegex = /https:\/\/gs\.hoyoverse\.com/;
-        const endTrailRegex = /hk4e_global#\/log\n/;
+        const hostNameRegex = /https:\/\/gs\.hoyoverse\.com;
+        const endTrailRegex = /hk4e_global#\/log\n;
 
         const log = body.search(hostNameRegex);
         const end = body.search(endTrailRegex) + 'hk4e_global#/log'.length;
